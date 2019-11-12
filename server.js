@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const db = require('./models');
 
 const app = express();
 
@@ -8,7 +9,12 @@ app.use(express.static(__dirname + '/public'));
 
 // Programs
 app.get('/api/programs', (req, res) => {
-    // TODO: get list of programs
+    db.Program.findAll()
+    .then((programs) => res.send(programs))
+    .catch((err) => {
+        console.log('There was an error getting programs:', JSON.stringify(err));
+        return res.send(err);
+    });
 });
 app.post('/api/programs', (req, res) => {
     // TODO: insert program
