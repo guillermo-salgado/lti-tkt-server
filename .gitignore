@@ -1,9 +1,21 @@
+.idea
+*.cer
+*.crt
+*.key
+/npm-debug.log
+/server/config/config_override*.json
+/node_modules
+bower_components
+**/public/dist
+**/server/lib
+
+# Created by https://www.gitignore.io/api/node,eclipse
+
+### Node ###
 # Logs
 logs
 *.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # Runtime data
 pids
@@ -23,21 +35,15 @@ coverage
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
-# Bower dependency directory (https://bower.io/)
-bower_components
-
 # node-waf configuration
 .lock-wscript
 
-# Compiled binary addons (https://nodejs.org/api/addons.html)
+# Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
 # Dependency directories
-node_modules/
-jspm_packages/
-
-# TypeScript v1 declaration files
-typings/
+node_modules
+jspm_packages
 
 # Optional npm cache directory
 .npm
@@ -48,14 +54,59 @@ typings/
 # Optional REPL history
 .node_repl_history
 
-# Output of 'npm pack'
-*.tgz
 
-# Yarn Integrity file
-.yarn-integrity
+### Eclipse ###
 
-# dotenv environment variables file
-.env
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
 
-# next.js build output
-.next
+# Eclipse Core
+.project
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
+.cproject
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
+
+# db
+*.sqlite3*
