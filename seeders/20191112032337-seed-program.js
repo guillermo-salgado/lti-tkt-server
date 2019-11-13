@@ -8,26 +8,26 @@ module.exports = {
                 {
                     name: 'Art History',
                     description: '',
-                    createdAt: new Date().toDateString(),
-                    updatedAt: new Date().toDateString()
+                    createdAt: new Date(),
+                    updatedAt: new Date()
                 },
                 {
                     name: 'History',
                     description: '',
-                    createdAt: new Date().toDateString(),
-                    updatedAt: new Date().toDateString()
+                    createdAt: new Date(),
+                    updatedAt: new Date()
                 },
                 {
                     name: 'Computer Science',
                     description: '',
-                    createdAt: new Date().toDateString(),
-                    updatedAt: new Date().toDateString()
+                    createdAt: new Date(),
+                    updatedAt: new Date()
                 },
                 {
                     name: 'Mathematics',
                     description: '',
-                    createdAt: new Date().toDateString(),
-                    updatedAt: new Date().toDateString()
+                    createdAt: new Date(),
+                    updatedAt: new Date()
                 }
             ],
             {}
